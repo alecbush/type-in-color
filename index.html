@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>🌈</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="type and watch color generate">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="color">
+        <meta name="author" content="Alec Bush">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+        <script src="https://dl.dropboxusercontent.com/s/r55397ld512etib/EncoderDecoderTogether.min.js?dl=0" type="text/javascript"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    </head>
+    <body>
+        <div id="app" v-bind:style="{ 'background-color': hex }">
+            <span id="hex">{{ hex }}</span>
+            <textarea id="text" 
+                v-model="text" 
+                @keyup="color" 
+                placeholder="slowly type 'color'">
+            </textarea>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
