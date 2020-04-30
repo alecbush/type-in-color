@@ -16,10 +16,10 @@
     <body>
         <div id="app" v-bind:style="{ 'background-color': hex }">
             <span id="hex">{{ hex }}</span>
-            <textarea id="text" 
-                v-model="text" 
+            <textarea id="text"
+                v-model="text"
                 @keyup="color" 
-                placeholder="slowly type 'color'">
+                placeholder="type here to generate color">
             </textarea>
         </div>
         <script src="app.js"></script>
